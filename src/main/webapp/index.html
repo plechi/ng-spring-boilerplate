@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title ng-bind="pageTitle">App</title>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/app.min.js"></script>
+</head>
+<body ng-class="{'navigation-drawer-open':navigationDrawerOpen === true}">
+<div class="navigation-drawer">
+    <nav>
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="index">App</a>
+        </div>
+        <ul class="nav nav-sidebar clearfix">
+            <li><a ui-sref="index" ui-sref-active="active"><span class="fa fa-users fa-lg"></span>Index</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="navigation-drawer-content">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        ng-click="navigationDrawerOpen=!navigationDrawerOpen" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main ui-view="main">
+        <div class="container-fluid">
+            <p>Content is loading...</p>
+        </div>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<div class="container-fluid container-maxsize">
+    <h2>Authors</h2>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <table auto-table model="data.Author" columns="ID,Name" element-name="Author" new-link="authors.new">
+                <td style="width:70px; text-align: right;">{{row.id}}</td>
+                <td><a ui-sref="authors.edit({id:row.id, page:page.number})">{{row.name}}</a></td>
+            </table>
+        </div>
+    </div>
+</div>

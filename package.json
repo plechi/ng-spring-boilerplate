@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "description",
+  "author": "Lukas Plechinger",
+  "license": "MIT License",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-bower-concat": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-less": ""
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "start": "npm install && bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file:./git"
+  },
+  "homepage": "http://www.plechinger.at",
+  "dependencies": {
+    "grunt-cli": "",
+    "bower":""
+  }
+}
