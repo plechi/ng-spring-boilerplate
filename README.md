@@ -3,8 +3,14 @@
 Simple boilerplate for my workflow.
 Considering using `yo` for the future, but for now this is sufficient.
 
+##Features
 
-##How to use
+  - Uses bower to add new frontend dependencies. Just run `bower install yourdependency --save` and you can use it
+  - For Database migrations, just put a `.sql` file in `src/main/resources/db/migration/` and it automatically versions your db (look here to see how to use migrations https://flywaydb.org/documentation/migration/)
+  - Angular bootstrap ui-router ready to use
+  - Some of my favourite Java libraries included (lombok, guava,..)
+
+##How to install
 
   1. Change Application Name/Package name in:
       - `pom.xml`
