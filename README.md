@@ -14,6 +14,7 @@ Considering using `yo` for the future, but for now this is sufficient.
       - `src/main/javascript/**/*.js` (`angular.module('packagename')`)
       - `src/main/webapp/index.html` (`ng-app="packagename"`)
   2. Run
+     
      ```
      npm update
      mvn clean compile
@@ -40,7 +41,17 @@ bower install name --save
 grunt && grunt watch
 ```
 
-#License
+##Dependencies
+
+You need following software:
+  - Java (current 1.8.x)
+  - Maven (current 4.x)
+  - Node.js & NPM
+  - Grunt (`npm install -g grunt-cli`)
+  - Bower (`npm install -g bower`)
+  - ... (there may be something I forgot, please open an issue/pull request and tell me)
+
+##License
 
 Licensed under the MIT License
 
